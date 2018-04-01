@@ -10,7 +10,7 @@ header = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 \
 
 
 def crawl_lianjia():
-    url = 'https://sh.lianjia.com/zufang/pg{page}/'
+    url = 'https://hz.lianjia.com/zufang/pg{page}/'
     csv_file = open('lianjia.csv', 'w')
     csv_writer = csv.writer(csv_file, delimiter=',')
     print('start fetch linjia..')
@@ -29,7 +29,7 @@ def crawl_lianjia():
 
 
 def crawl_anjuke():
-    url = 'https://sh.zu.anjuke.com/fangyuan/p1/'
+    url = 'https://hz.zu.anjuke.com/fangyuan/p1/'
     csv_file = open('anjuke.csv', 'w')
     csv_writer = csv.writer(csv_file, delimiter=',')
     print('start fetch anjuke..')
@@ -59,7 +59,7 @@ def crawl_anjuke():
 
 
 def crawl_58():
-    url = 'http://sh.58.com/chuzu/pn{page}/'
+    url = 'http://hz.58.com/chuzu/pn{page}/'
     csv_file = open('58tongcheng.csv', 'w')
     csv_writer = csv.writer(csv_file, delimiter=',')
     print('start fetch 58 tongcheng..')
@@ -85,8 +85,8 @@ def crawl_58():
 
 
 def crawl_ganji():
-    url = 'http://sh.ganji.com/fang1/o1/'
-    prefix = 'http://sh.ganji.com'
+    url = 'http://hz.ganji.com/fang1/o1/'
+    prefix = 'http://hz.ganji.com'
     csv_file = open('ganji.csv', 'w')
     csv_writer = csv.writer(csv_file, delimiter=',')
     print('start fetch ganji..')
@@ -117,8 +117,8 @@ def crawl_ganji():
 
 
 def crawl_fangtx():
-    url = 'http://zu.sh.fang.com/house/i3{page}/'
-    prefix = 'http://zu.sh.fang.com'
+    url = 'http://zu.hz.fang.com/house/i3{page}/'
+    prefix = 'http://zu.hz.fang.com'
     csv_file = open('fangtx.csv', 'w')
     csv_writer = csv.writer(csv_file, delimiter=',')
     print('start fetch fangtx..')
