@@ -3,7 +3,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
-        <title>上海租房</title>
+        <title>杭州租房</title>
         <link rel="stylesheet" href="http://cache.amap.com/lbs/static/main1119.css" />
         <link rel="stylesheet" href="http://cache.amap.com/lbs/static/jquery.range.css" />
         <script src="http://cache.amap.com/lbs/static/jquery-1.9.1.js"></script>
@@ -159,7 +159,7 @@
 
         function addMarkerByAddress(address) {
             var geocoder = new AMap.Geocoder({
-                city: "上海",
+                city: "杭州",
                 radius: 1000
             });
             geocoder.getLocation(address[1], function(status, result) {
@@ -181,7 +181,7 @@
                         amapTransfer = new AMap.Transfer({
                             map: map,
                             policy: AMap.TransferPolicy.LEAST_TIME,
-                            city: "上海市",
+                            city: "杭州市",
                             panel: 'transfer-panel'
                         });
                         amapTransfer.search([{
@@ -208,7 +208,7 @@
         function loadWorkLocation() {
             delWorkLocation();
             var geocoder = new AMap.Geocoder({
-                city: "上海",
+                city: "杭州",
                 radius: 1000
             });
 
